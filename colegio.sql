@@ -1,5 +1,5 @@
 CREATE DATABASE  IF NOT EXISTS `colegio2409` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `colegio2409`;
+USE colegio2409;
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: 127.0.0.1    Database: colegio

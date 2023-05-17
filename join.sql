@@ -120,7 +120,7 @@ ORDER BY n.id_nivel;
 
 select * from salones s
 LEFT JOIN niveles n ON(s.id_nivel =n.id_nivel)
-WHERE n.id_nivel is null -- siempre llave foranea
+-- WHERE n.id_nivel is null -- siempre llave foranea
 ORDER BY n.id_nivel; 
 
 -- RIGTH 
@@ -189,3 +189,12 @@ from pagos
 group by clave_alu, id_curso) p ON (a.clave_alu = p.clave_alu)
 LEFT JOIN cursos USING(id_curso)
 WHERE sexo = 'F';
+
+SELECT nombre, ap_paterno, ap_materno
+from alumnos
+where ap_materno = 'PEREZ'
+OR ap_paterno = 'PEREZ'
+ORDER BY 3;
+
+
+ 
